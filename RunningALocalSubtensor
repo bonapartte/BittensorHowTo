@@ -1,0 +1,15 @@
+# Step 1.
+Follow the steps in InstallingRust
+
+# Step 2: Install Subtensor
+git clone https://github.com/opentensor/subtensor.git
+cd subtensor
+cargo build --release
+
+# Step 3: Run Chain
+./scripts/localnet.sh
+
+# Step 4: Visit Frontend.
+1. From the same machine running the chain, navigate to https://polkadot.js.org/apps
+2. Select the drop down from the **top left corner**, which will open the networks Parachain's tab.
+3. Unfold "Development" and enter the custom endpoint: ws://127.0.0.1:9947/
